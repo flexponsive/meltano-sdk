@@ -27,6 +27,7 @@ jobs:
     - name: Install dependencies
       run: |
         poetry install
+        pip install tox
     - name: Run lint command from tox.ini
       run: |
         poetry run tox -e lint
