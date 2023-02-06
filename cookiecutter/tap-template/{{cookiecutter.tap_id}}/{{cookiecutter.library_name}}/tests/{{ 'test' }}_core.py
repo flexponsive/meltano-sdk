@@ -15,8 +15,7 @@ SAMPLE_CONFIG = {
 
 # Run standard built-in tap tests from the SDK:
 TestTap{{ cookiecutter.source_name }} = get_tap_test_class(
-    tap_class=Tap{{ cookiecutter.source_name }},
-    config=SAMPLE_CONFIG
+    tap_class=Tap{{ cookiecutter.source_name }}, config=SAMPLE_CONFIG
 )
 
 
